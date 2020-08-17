@@ -2,32 +2,86 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title> My Web page</title>
-	
+	<title> Netflix Bills</title>
+	<style>
+		h1{
+			font-size: 70px;
+			text-align: center;
+			font-family: "Century Gothic";
+			font-weight: lighter;
+			color: tomato;
+		}
+		body{
+			background-color: wheat;
+		}
+		table{
+			transform: translate(30vw);
+			font-family: cursive;
+			background-color: seagreen;
+			color: mintcream;
+			border-radius: 7px 7px 0px 0px;
+		}
+		td{
+			text-align: center;
+			width: 50px;
+			padding: 25px;
+			border:1px solid black;
+		}
+		tr{
+			opacity: 50%;
+		}
+		tr:hover{
+			opacity: 150%;
+		}
+		th{
+			border:1px solid black;
+		}
+		th:first-child{
+			border-radius: 7px 0px 0px 0px;
+		}
+		.head{
+			opacity: 100%;
+		}
+		p{
+			font-size: 35px;
+			color: slateblue;
+			text-align: center;
+		}
+		div{
+			font-size: 20px;
+			font-family: "Times New Roman";
+			text-align: center;
+			transform: translate(0px,20px);
+		}
+		a{
+			text-decoration: none;
+			font-family: cursive;
+			color: saddlebrown;
+		}
+	</style>
+	<script type="text/javascript">
+		function greetings(){
+			var a = prompt("Please enter your name: ");
+			document.getElementById('net').innerHTML = "Hello " +  a + "<br>" + " Have a nice day!";
+		}
+	</script>
 </head>
-<body>
+<body onload="greetings()">
 	<h1> Netflix Bills </h1>
-	<table border="2">
-		<tr>
-			<th> Date </th> <th colspan="2"> Name </th> <th> Owing </th> <th> Accrued </th> <th> Total </th>
+	<p id="net"></p>
+	<table>
+		<tr class="head">
+			<th> Date </th> <th> Name </th> <th> Owing </th> <th> Accrued </th> <th> Total </th>
 		</tr>
 		<tr>
-			<td> 14/August/2020 </td> <td colspan="2"> Faisal Haider </td> <td> 130 </td> <td> 0 </td> <td> 0 </td>
+			<td> 14/August/2020 </td> <td>Safa Tasneem </td> <td> 0 </td> <td> 10 </td> <td> -10 </td>
 		</tr>
 		<tr>
-			<td> 14/August/2020 </td> <td colspan="2"> Safa Tasneem </td> <td> 520 </td> <td> 0 </td> <td> 260 </td>
+			<td> 14/August/2020 </td> <td> Mahidul Parash </td> <td> 260 </td> <td> 0 </td> <td> 260 </td>
 		</tr>
-		<tr>
-			<td> 14/August/2020 </td> <td colspan="2"> Mahidul Parash </td> <td> 520 </td> <td> 0 </td> <td> 260 </td>
-		</tr>
-		<tr>
-			<td> 14/August/2020 </td> <td colspan="2"> Fairooz Adiba </td> <td> 520 </td> <td> 0 </td> <td> 390 </td>
-		</tr>
-                 <tr>
-                        <td> 14/August/2020 </td> <td colspan = "2"> Farid Uddin </td> <td> 520 </td> <td> 0 </td> <td> 390 </td> 
-                  </tr>
-		<tr>  <td> 14/August/2020 </td> <td colspan = "2"> Abrar Asif </td> <td> 260 </td> <td> 0 </td> <td> 0 </td>
+		<tr>  <td> 14/August/2020 </td> <td> Abrar Asif </td> <td> 0 </td> <td> 0 </td> <td> 0 </td>
 		</tr>
            </table>
+           <div>If you have any issue with the following record please inform <a href="https://www.facebook.com/ahnaf.khan.71619" target="_blank">Ahnaf Abid Khan</a></div>
 </body>
 </html>
