@@ -59,28 +59,44 @@
 			font-family: cursive;
 			color: saddlebrown;
 		}
+		.normal{
+			color: white;
+		}
+		img{
+			width: 50px;
+			height:50px;
+		}
 	</style>
 	<script type="text/javascript">
 		function greetings(){
 			var a = prompt("Please enter your name: ");
+			if(a==null)
+			{
+				document.getElementById('net').innerHTML = "Don't feel shy!";
+			}
+			else
 			document.getElementById('net').innerHTML = "Hello " +  a + "<br>" + " Have a nice day!";
 		}
 	</script>
 </head>
 <body onload="greetings()">
-	<h1> Netflix Bills </h1>
+	<h1> Netflix Bills <img src="images/netflix.png" alt="netflix logo"></h1>
 	<p id="net"></p>
 	<table>
 		<tr class="head">
 			<th> Date </th> <th> Name </th> <th> Owing </th> <th> Accrued </th> <th> Total </th>
 		</tr>
 		<tr>
-			<td> 14/August/2020 </td> <td>Safa Tasneem </td> <td> 0 </td> <td> 10 </td> <td> -10 </td>
+			<td> 14/August/2020 </td> <td><a class="normal" href="https://www.facebook.com/profile.php?id=100012161075743" target="_blank">Safa Tasneem</a></td> <td> 0 </td> <td> 10 </td> <td> -10 </td>
 		</tr>
 		<tr>
-			<td> 14/August/2020 </td> <td> Mahidul Parash </td> <td> 260 </td> <td> 0 </td> <td> 260 </td>
+			<td> 14/August/2020 </td> <td><a class="normal" href="https://www.facebook.com/profile.php?id=100013104935619" target="_blank">Mahidul Parash</a></td> <td> 260 </td> <td> 0 </td> <td> 260 </td>
 		</tr>
-		<tr>  <td> 14/August/2020 </td> <td> Abrar Asif </td> <td> 0 </td> <td> 0 </td> <td> 0 </td>
+		<tr>  <td> 14/August/2020 </td> <td><a class="normal" href="https://www.facebook.com/abrarasif.khan.5" target="_blank">Abrar Asif</a></td> <td> 0 </td> <td> 0 </td> <td> 0 </td>
+		</tr>
+		<tr>
+			<td>23/August/2020</td> <td><a class="normal" href="https://www.facebook.com/jaw.rips" target="_blank">Hasan Ferdous</a></td> <td> 0 </td>
+			<td> 0 </td> <td> 0 </td>
 		</tr>
            </table>
            <div>If you have any issue with the following record please inform <a href="https://www.facebook.com/ahnaf.khan.71619" target="_blank">Ahnaf Abid Khan</a></div>
