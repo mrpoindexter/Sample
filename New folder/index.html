@@ -1,148 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title> Netflix Bills</title>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<style>
-		h1{
-			font-size: 5em;
-			text-align: center;
-			font-family: "Century Gothic";
-			font-weight: lighter;
-			color: tomato;
-		}
-		body{
-			background-color: wheat;
-		}
-		table{
-			text-align: center !important;
-			font-family: cursive;
-			background-color: seagreen;
-			color: mintcream;
-			border-radius: 1em 1em 0em 0em;
-			margin-left:30%;
-		}
-		td{
-			text-align: center !important;
-			width: 7em;
-			padding: 3em;
-			border: 0.1em solid white;
-		}
-		tr{
-			opacity: 50%;
-		}
-		tr:hover{
-			opacity: 150%;
-		}
-		th{
-			border:0.1em solid white;
-			text-align: center !important;
-		}
-		th:first-child{
-			border-radius: 1em 0em 0em 0em;
-		}
-		.head{
-			opacity: 100%;
-		}
-		.table {
-   margin: auto;
-   width: 50% !important; 
-}
-		p{
-			font-size: 2em;
-			color: slateblue;
-			text-align: center;
-		}
-		div{
-			font-size: 3em;
-			font-family: "Times New Roman";
-			text-align: center;
-			transform: translate(0em,3em);
-		}
-		a{
-			text-decoration: none;
-			font-family: cursive;
-			color: saddlebrown;
-		}
-		.normal{
-			color: white;
-		}
-		img{
-			width:  1em;
-			height: 1em;
-		}
-		footer{
-			text-align:center !important;
-			font-size: 1.5em;
-		}
-	</style>
-	<script type="text/javascript">
-		function greetings(){
-			var a = prompt("Please enter your name: ");
-			if(a==null)
-			{
-				document.getElementById('net').innerHTML = "Hello Human!!";
-			}
-			else
-			document.getElementById('net').innerHTML = "Hello " +  a + "<br>" + " Have a nice day!";
-		}
-	</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0057b8;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background: white;
+            padding: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #0057b8;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .resume-download {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .resume-download a {
+            background: #0057b8;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
-<body onload="greetings()">
-	<h1> Netflix Bills <img src="images/Netflix.png" alt="netflix logo"></h1>
-	<p id="net"></p>
-	
-	<table class="table">
-		<tr class="head">
-			<th> Date </th> <th> Name </th> <th> Owing </th> <th> Accrued </th> <th> Total </th>
-		</tr>
-		<tr>
-			<td> 02/<script>const monthNames = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"]; 
-				var d = new Date();
-                var month = d.getUTCMonth();
-         document.write(monthNames[month]); </script>/<script> var d = new Date();
-                var year = d.getUTCFullYear();
-         document.write(year);</script></td> <td><a class="normal" href="https://www.facebook.com/profile.php?id=100012161075743" target="_blank">Safa Tasneem</a></td> <td> 400 </td> <td> 0 </td> <td> 400 </td>
-		</tr>
-		<tr>
-			<td> 02/<script>const monthNames1 = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"]; 
-				var d = new Date();
-                var month = d.getUTCMonth();
-         document.write(monthNames1[month]); </script>/<script> var d = new Date();
-                var year = d.getUTCFullYear();
-         document.write(year);</script></td> <td><a class="normal" href="https://www.facebook.com/basitul" target="_blank">Basit Kabir</a></td> <td> 200 </td> <td> 0 </td> <td> 200 </td>
-		</tr>
-		<tr>  <td> 02/<script>const monthNames2 = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"]; 
-				var d = new Date();
-                var month = d.getUTCMonth();
-         document.write(monthNames2[month]); </script>/<script> var d = new Date();
-                var year = d.getUTCFullYear();
-         document.write(year);</script> </td> <td><a class="normal" href="https://www.facebook.com/abrarasif.khan.5" target="_blank">Abrar Asif</a></td> <td> 0 </td> <td> 0 </td> <td> 0 </td>
-		</tr>
-		<tr>
-			<td>02/<script>const monthNames3 = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"]; 
-				var d = new Date();
-                var month = d.getUTCMonth();
-         document.write(monthNames3[month]); </script>/<script> var d = new Date();
-                var year = d.getUTCFullYear();
-         document.write(year);</script></td> <td><a class="normal" href="https://www.facebook.com/adila.rahman.7355" target="_blank">Adila Rahman</a></td> <td> 200 </td>
-			<td> 0 </td> <td> 200 </td>
-		</tr>
-           </table>
-           <footer>If you have any issue with the following record please inform <a href="https://www.facebook.com/ahnaf.khan.71619" target="_blank">Ahnaf Abid Khan</a><br>
-
-           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>CSE Graduate | IT Professional | Transitioning to Banking</p>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Computer Science graduate with experience in IT projects, now transitioning into the banking sector.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Showcase your IT projects here.</p>
+    </section>
+    
+    <section id="resume">
+        <h2>Resume & Certifications</h2>
+        <div class="resume-download">
+            <a href="resume.pdf" download>Download Resume</a>
+            <a href="certifications.pdf" download>Download Certifications</a>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
+    </section>
 </body>
 </html>
